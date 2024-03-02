@@ -5,9 +5,9 @@
 [![Stargazers](https://img.shields.io/github/stars/darshangaikwad4114/India_GDP_Visualisation_Chart?logo=github&style=for-the-badge)](https://github.com/darshangaikwad4114/India_GDP_Visualisation_Chart/stargazers)
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/darshan-gaikwad/)
 
-# Resort Management System✨
+# India-GDP-Visualisation-Chart✨
 
-## ✨ [Live Preview](https://darshan-India_GDP_Visualisation_Chart.netlify.app/)
+## ✨ [Live Preview](https://darshan-India-GDP-Visualisation-Chart.netlify.app/)
 
 # ⚡Tech Used
 
