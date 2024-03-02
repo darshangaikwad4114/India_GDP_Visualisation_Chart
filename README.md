@@ -7,7 +7,7 @@
 
 # India-GDP-Visualisation-Chart✨
 
-## ✨ [Live Preview](https://darshan-India-GDP-Visualisation-Chart.netlify.app/)
+<!-- ## ✨ [Live Preview](https://darshan-India-GDP-Visualisation-Chart.netlify.app/) -->
 
 # ⚡Tech Used
 
