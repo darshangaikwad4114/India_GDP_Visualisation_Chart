@@ -1,13 +1,10 @@
 <div align="center">
 
-![Forks](https://img.shields.io/github/forks/darshangaikwad4114/India_GDP_Visualisation_Chart?logo=GITHUB&style=for-the-badge)
-[![Contributions Welcome](https://img.shields.io/badge/contributions-welcome-blue.svg?style=for-the-badge)](https://github.com/darshangaikwad4114/India_GDP_Visualisation_Chart)
-[![Stargazers](https://img.shields.io/github/stars/darshangaikwad4114/India_GDP_Visualisation_Chart?logo=github&style=for-the-badge)](https://github.com/darshangaikwad4114/India_GDP_Visualisation_Chart/stargazers)
-[![LinkedIn](https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/darshan-gaikwad/)
-
 # India-GDP-Visualisation-Chart✨
 
-<!-- ## ✨ [Live Preview](https://darshan-India-GDP-Visualisation-Chart.netlify.app/) -->
+[![Netlify Status](https://api.netlify.com/api/v1/badges/b0b6be7b-fbdc-44d7-814f-dfabf9a37345/deploy-status)](https://app.netlify.com/sites/india-gdp-visualisation-chart/deploys)
+
+## ✨ [Live Preview](https://india-gdp-visualisation-chart.netlify.app/)
 
 # ⚡Tech Used
 
