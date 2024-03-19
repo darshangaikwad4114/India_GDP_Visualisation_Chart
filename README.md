@@ -6,6 +6,11 @@
 
 ## ✨ [Live Preview](https://india-gdp-visualisation-chart.netlify.app/)
 
+<div align='center'>
+<img src='./src/home.png'/>
+
+</div>
+
 # ⚡Tech Used
 
 <div align="center">
