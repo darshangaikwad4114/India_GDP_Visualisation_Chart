@@ -1,0 +1,469 @@
+.current-stats .card {
+  border: none;
+  border-radius: var(--card-radius);
+  box-shadow: var(--box-shadow);
+  transition: var(--transition);
+  overflow: hidden;
+  background: white;
+  height: 100%;
+  position: relative;
+}
+
+.current-stats .card:hover {
+  transform: translateY(-5px);
+  box-shadow: var(--box-shadow-lg);
+}
+
+.current-stats .card::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 4px;
+  height: 100%;
+  background: var(--gradient-primary);
+}
+
+.current-stats .card-body {
+  padding: 1.5rem;
+}
+
+.card-subtitle {
+  font-size: 0.875rem;
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  color: var(--gray-500);
+}
+
+.data-value {
+  font-size: 2.25rem;
+  font-weight: 700;
+  color: var(--primary-color);
+  margin: 0.75rem 0;
+  display: flex;
+  align-items: center;
+}
+
+.data-value::after {
+  content: "";
+  display: inline-block;
+  width: 8px;
+  height: 8px;
+  background-color: currentColor;
+  border-radius: 50%;
+  margin-left: 6px;
+  margin-top: 10px;
+}
+
+.data-trend {
+  display: flex;
+  align-items: center;
+  font-weight: 500;
+  gap: 0.25rem;
+  padding: 0.25rem 0.75rem;
+  border-radius: 20px;
+  width: fit-content;
+  font-size: 0.85rem;
+}
+
+.data-trend-up {
+  color: var(--success-color);
+  background-color: rgba(74, 222, 128, 0.1);
+}
+
+.data-trend-down {
+  color: var(--danger-color);
+  background-color: rgba(248, 113, 113, 0.1);
+}
+
+.custom-tooltip {
+  background-color: var(--card-bg);
+  border: 1px solid var(--gray-300);
+  padding: 12px;
+  border-radius: var(--border-radius);
+  box-shadow: var(--box-shadow-sm);
+}
+
+.tooltip-year {
+  font-weight: 600;
+  margin-bottom: 5px;
+  color: var(--text-color);
+}
+
+.tooltip-value {
+  color: var(--primary-color);
+  font-weight: 700;
+  margin-bottom: 0;
+}
+
+.recharts-wrapper {
+  margin: 0 auto;
+}
+
+.insight-container {
+  background: linear-gradient(to right, rgba(67, 97, 238, 0.05), rgba(114, 9, 183, 0.05));
+  background-color: var(--card-bg);
+  border-radius: var(--card-radius);
+  border-left: 4px solid var(--primary-color);
+  padding: 0;
+  overflow: hidden;
+}
+
+.insight-container .card {
+  border: none;
+  background: transparent;
+}
+
+.insight-container .card-title {
+  color: var(--primary-light);
+  display: flex;
+  align-items: center;
+  font-size: 1.25rem;
+  margin-bottom: 1rem;
+}
+
+.insight-list {
+  list-style-type: none;
+  padding-left: 1rem;
+}
+
+.insight-list li {
+  position: relative;
+  padding: 0.5rem 0;
+  padding-left: 1.5rem;
+  color: var(--text-color);
+}
+
+.insight-list li:before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0.9rem;
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background-color: var(--primary-color);
+}
+
+.dashboard-controls {
+  margin-bottom: 2rem;
+  background: white;
+  padding: 1rem;
+  border-radius: var(--card-radius);
+  box-shadow: var(--box-shadow-sm);
+}
+
+.filter-controls {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  align-items: center;
+}
+
+.form-select, .form-control {
+  border-radius: var(--border-radius);
+  border-color: var(--gray-300);
+}
+
+.form-label {
+  font-weight: 500;
+  color: var(--dark-color);
+}
+
+.form-check-input:checked {
+  background-color: var(--primary-color);
+  border-color: var(--primary-color);
+}
+
+.footer-info {
+  border-top: 1px solid var(--gray-200);
+  padding-top: 1.5rem;
+  margin-top: 3rem;
+}
+
+.quarterly-breakdown {
+  height: 100%;
+}
+
+.pulse {
+  animation: pulse 2s infinite;
+}
+
+.highlight-bar {
+  animation: highlightBar 2s ease-in-out;
+}
+
+@keyframes pulse {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.05);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+@keyframes highlightBar {
+  0% { opacity: 0.7; }
+  50% { opacity: 1; }
+  100% { opacity: 0.7; }
+}
+
+@media (max-width: 768px) {
+  .current-stats .card {
+    margin-bottom: 1.5rem;
+  }
+  
+  .recharts-wrapper {
+    font-size: 12px;
+  }
+  
+  .insight-list li {
+    padding: 0.25rem 0;
+    padding-left: 1.25rem;
+  }
+  
+  .insight-list li:before {
+    top: 0.7rem;
+    width: 6px;
+    height: 6px;
+  }
+  
+  .data-value {
+    font-size: 1.75rem;
+  }
+  
+  .filter-controls {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.75rem;
+  }
+}
+
+.dashboard-header {
+  background-color: var(--card-bg);
+  border-radius: var(--card-radius);
+  box-shadow: var(--box-shadow);
+  padding: 1.5rem;
+  margin-bottom: 2rem;
+}
+
+.dashboard-heading {
+  font-size: 1.75rem;
+  font-weight: 700;
+  margin: 0;
+  color: var(--primary-light);
+}
+
+.dashboard-subtitle {
+  color: var(--gray-500);
+  margin: 0.5rem 0 0;
+  font-size: 0.95rem;
+}
+
+.dashboard-actions {
+  display: flex;
+  gap: 1rem;
+}
+
+.insight-toggle {
+  display: flex;
+  align-items: center;
+}
+
+.insight-btn {
+  display: flex;
+  align-items: center;
+  background-color: var(--gray-100);
+  border: none;
+  padding: 0.5rem 1rem;
+  border-radius: var(--border-radius);
+  color: var(--gray-500);
+  font-weight: 500;
+  transition: var(--transition);
+}
+
+.insight-btn:hover {
+  background-color: var(--gray-200);
+}
+
+.insight-btn.active {
+  background-color: var(--primary-light);
+  color: var(--dark-color);
+}
+
+.export-btn {
+  display: flex;
+  align-items: center;
+  background-color: var(--primary-color);
+  border: none;
+  padding: 0.5rem 1.25rem;
+  border-radius: var(--border-radius);
+  color: white;
+  font-weight: 500;
+  transition: var(--transition);
+}
+
+.export-btn:hover {
+  background-color: var(--primary-dark);
+  transform: translateY(-2px);
+}
+
+@media (max-width: 768px) {
+  .dashboard-header {
+    padding: 1.25rem;
+  }
+  
+  .dashboard-heading {
+    font-size: 1.5rem;
+  }
+  
+  .dashboard-actions {
+    margin-top: 1rem;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+  }
+  
+  .current-stats .card {
+    margin-bottom: 1.5rem;
+  }
+  
+  .recharts-wrapper {
+    font-size: 12px;
+  }
+  
+  .insight-list li {
+    padding: 0.25rem 0;
+    padding-left: 1.25rem;
+  }
+  
+  .insight-list li:before {
+    top: 0.7rem;
+    width: 6px;
+    height: 6px;
+  }
+  
+  .data-value {
+    font-size: 1.75rem;
+  }
+}
+
+.recharts-responsive-container {
+  font-family: 'Roboto', sans-serif;
+}
+
+.recharts-cartesian-axis-tick-value {
+  font-size: 0.85rem;
+  fill: var(--gray-500);
+}
+
+.recharts-tooltip-wrapper {
+  z-index: 1000;
+}
+
+.recharts-default-legend {
+  margin-bottom: 10px !important;
+}
+
+.recharts-legend-item-text {
+  font-weight: 500 !important;
+  font-size: 0.9rem !important;
+}
+
+.recharts-surface {
+  overflow: visible;
+}
+
+@media (max-width: 992px) {
+  .col-lg-8, .col-lg-4 {
+    margin-bottom: 1rem;
+  }
+}
+
+.copyright {
+  color: var(--gray-500);
+  font-size: 0.875rem;
+  margin-bottom: 0;
+}
+
+.data-card {
+  background: var(--card-bg);
+  border-radius: var(--card-radius);
+  box-shadow: var(--box-shadow);
+  transition: var(--transition);
+  overflow: hidden;
+  height: 100%;
+  position: relative;
+}
+
+.data-card:hover {
+  transform: translateY(-5px);
+  box-shadow: var(--box-shadow-lg);
+}
+
+.data-card::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 4px;
+  height: 100%;
+  background: var(--gradient-primary);
+}
+
+/* Improve dark mode specific styles */
+[data-theme='dark'] .data-card {
+  background: var(--card-bg);
+}
+
+[data-theme='dark'] .dashboard-header {
+  background: var(--card-bg);
+}
+
+[data-theme='dark'] .insight-container {
+  background: linear-gradient(to right, 
+    rgba(96, 165, 250, 0.05), 
+    rgba(192, 132, 252, 0.05)
+  );
+}
+
+[data-theme='dark'] .insight-list li {
+  color: var(--text-color);
+}
+
+[data-theme='dark'] .data-trend-up {
+  background-color: rgba(74, 222, 128, 0.2);
+}
+
+[data-theme='dark'] .data-trend-down {
+  background-color: rgba(248, 113, 113, 0.2);
+}
+
+[data-theme='dark'] .dashboard-heading {
+  color: var(--primary-light);
+}
+
+[data-theme='dark'] .dashboard-subtitle {
+  color: var(--gray-400);
+}
+
+[data-theme='dark'] .copyright {
+  color: var(--gray-400);
+}
+
+/* Ensure tooltip has proper contrast in dark mode */
+[data-theme='dark'] .custom-tooltip {
+  background-color: var(--gray-200);
+  border-color: var(--gray-300);
+}
+
+[data-theme='dark'] .tooltip-year {
+  color: var(--text-color);
+}
+
+[data-theme='dark'] .tooltip-value {
+  color: var(--primary-light);
+}

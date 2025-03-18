@@ -1,13 +1,20 @@
-// Header.js
 import React from "react";
+import "./Header.css";
 
 function Header() {
     return (
-        <nav className="navbar navbar-primary bg-primary p-2 fs-4 text-uppercase navbar-expand">
-            <div className="w-100 text-light text-center">
-                India's GDP Charts
-            </div>
-        </nav>
+        <header className="header">
+            <nav className="navbar navbar-expand">
+                <div className="container d-flex justify-content-between align-items-center">
+                    <div className="navbar-brand-wrapper d-flex align-items-center">
+                        <div className="navbar-logo me-3">
+                            <i className="bi bi-bar-chart-fill"></i>
+                        </div>
+                        <div className="navbar-title">India's GDP Dashboard</div>
+                    </div>
+                </div>
+            </nav>
+        </header>
     );
 }
 
